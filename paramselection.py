@@ -619,6 +619,7 @@ if selected_project:
                                                 line=dict(width=1, color='black')
                                             ),
                                             name=f"{y_axis_param} vs Temp/Voltage",
+                                            
                                         ))
 
                                         fig_param.update_layout(
@@ -639,3 +640,11 @@ if selected_project:
 
                 if st.button("Back to Summary", key="back_from_raw_btn_2", help="Go back to Summary View"):
                     st.session_state.data_view = "summary"
+
+
+
+
+
+
+
+
