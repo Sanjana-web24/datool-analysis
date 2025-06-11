@@ -236,7 +236,7 @@ if selected_project:
                     selected_raw_file = st.selectbox("Choose a Raw Excel file", raw_files)
                     raw_file_url = raw_url + selected_raw_file
                     xls = fetch_excel_file(raw_file_url)
-                    if xls is None:
+                    if xls is None: 
                         st.stop()
                     raw_sheet = next((s for s in xls.sheet_names if "raw" in s.lower()), None)
                     if raw_sheet:
